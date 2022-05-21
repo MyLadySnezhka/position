@@ -1,8 +1,10 @@
 .body-container {
-  width: 100%;
-  min-height: 1200px;
-  min-width: 300px;
-  background-color: #c9bfbf;
+  min-height: 800px;
+  max-width: 1920px;
+  margin: 0 auto;
+  /*     background-color: rgb(201, 191, 191); */
+  /*    position: relative; */
+  padding: 100px;
 }
 
 .content-block1,
@@ -13,24 +15,22 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 80%;
-  height: 300px;
+  width: 60%;
   padding: 30px;
   font-size: 24px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin-bottom: 50px;
 }
 
 .content-block1 {
   color: blue;
   background-color: yellow;
-  margin: 50px auto;
 }
 
 .content-block2 {
   color: yellow;
   background-color: red;
-  margin: 0 auto;
 }
 
 .button {
@@ -50,5 +50,24 @@
 
 .button:hover {
   background-color: aquamarine;
+}
+
+@media screen and (max-width: 1200px) {
+  .content-block1,
+  .content-block2 {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .body-container {
+    padding: 0;
+  }
+  .content-block1,
+  .content-block2 {
+    width: 100%;
+    margin-bottom: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
